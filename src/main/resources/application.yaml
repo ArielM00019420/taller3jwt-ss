@@ -1,0 +1,27 @@
+#spring.application.name=PNCController
+#spring.mustache.suffix=.html
+# jwt secret
+jwt:
+  # jwt secret key
+  secret: 0eS09:A|<r\l1Jpxa/K>3(3OLZV9m~5\
+    # jwt exp time in milliseconds <- 15 days
+  exptime: 1296000000
+spring:
+  sql:
+    init:
+      mode: always
+  application:
+      name: PNCController
+  mustache:
+      suffix: .html
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: 12345678Aa!
+  jpa:
+    hibernate:
+          ddl-auto: update
+    properties:
+        hibernate:
+            globally_quoted_identifiers: true
+    show-sql: true
